@@ -1,7 +1,7 @@
 /* General */
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #F2F4F3;
+  background-color: #DDE9E0;
   margin: 0;
   padding: 0;
 }
@@ -9,9 +9,9 @@ body {
 /* Header */
 header {
   display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  background-color: #FFF;
+  justify-content:end;
+  padding: 20px, 0px;
+  background-color: #DDE9E0;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -20,6 +20,7 @@ header {
   border: 1px solid #CCC;
   border-radius: 8px;
   width: 300px;
+  margin: 20px;
 }
 
 .profile-section {
@@ -48,7 +49,7 @@ header {
 
 /* Main */
 .main-title {
-  padding: 20px;
+  padding: 10px;
   color: #333;
 }
 
@@ -57,14 +58,20 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 20px;
+  background-color: rgba(221, 233, 224, 0.5); /* 50% de opacidad */
+}
+
+.tasks-projects-section h3{
+  font-size: small;
 }
 
 .tasks-section, .projects-section {
-  background-color: #FFF;
+  background-color: rgba(240, 245, 240, 0.8);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
   width: 48%;
+  margin: 20px;
 }
 
 .icon img {
@@ -97,6 +104,17 @@ h3 {
   width: 32%;
 }
 
+.left-column{
+  align-items: center;
+}
+
+.center-column{
+  background-color: rgba(240, 245, 240, 0.8); /* Color más claro */
+  padding: 30px;
+  margin: 0px 20px;
+  border-radius: 8px;
+}
+
 .profile-pic-circle {
   width: 150px;
   height: 150px;
@@ -110,6 +128,7 @@ h3 {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: rgba(240, 245, 240, 0.8);
   margin-bottom: 20px;
 }
 
@@ -126,6 +145,10 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+select{
+  margin: 10px;
 }
 
 select {
