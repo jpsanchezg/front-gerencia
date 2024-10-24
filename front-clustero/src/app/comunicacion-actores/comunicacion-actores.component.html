@@ -1,75 +1,103 @@
-<div class="app-container">
-    <!-- Sidebar -->
-    <aside class="sidebar">
-      <button class="create-project-btn">Crear proyecto</button>
-      <nav class="menu">
-        <ul>
-          <li><a href="#">Proyectos</a></li>
-          <li><a href="#">Tareas</a></li>
-          <li><a href="#">Usuarios</a></li>
-          <li><a href="#">Configuración</a></li>
-        </ul>
-      </nav>
-    </aside>
-  
-    <!-- Main content -->
-    <div class="main-content">
-      <!-- Header -->
-      <header class="header">
-        <input type="text" placeholder="Search for anything..." class="search-bar" />
-        <div class="user-info">
-          <img src="assets/profile-icon.png" alt="User Profile" class="profile-pic" />
-          <span>Lady</span>
-        </div>
-      </header>
-  
-      <!-- User Profile -->
-      <section class="user-profile">
-        <!-- User info section -->
-        <div class="user-info-section">
-          <img src="assets/user-photo.png" alt="User Photo" class="user-photo" />
-          <h1>Albert Camus</h1>
-        </div>
-  
-        <!-- General information (Tareas and Proyectos) -->
-        <div class="general-info">
-          <div class="general-info-cards">
-            <div class="card tasks-info">
-              <h3>Tareas en las que está vinculado</h3>
-              <p>50</p>
-            </div>
-            <div class="card projects-info">
-              <h3>Proyectos en los que está vinculado</h3>
-              <p>13 / no</p>
-            </div>
-          </div>
-        </div>
-  
-        <!-- Contact Information -->
-        <div class="contact-section">
-          <!-- Contact methods (phone, email, location) -->
-          <div class="contact-methods">
-            <button><i class="fa fa-phone"></i></button>
-            <button><i class="fa fa-envelope"></i></button>
-            <button><i class="fa fa-map"></i></button>
-          </div>
-  
-          <!-- Address and information -->
-          <div class="address">
-            <p><strong>Dirección:</strong> 12 Rue de L'Université, 75007, París, Francia</p>
-            <p><strong>Teléfono:</strong> +33 1 45 67 89 01</p>
-            <p><strong>Email:</strong> acamus&#64;gmail.com</p>
-            <p><strong>Sitio web:</strong> www.albertcamus.com</p>
-            <p><strong>Ubicación:</strong> París, Francia</p>
-            <p><strong>LinkedIn:</strong> linkedin.com/in/albertcamus</p>
-          </div>
-  
-          <!-- Map (Ubicación) -->
-          <div class="map">
-            <img src="assets/map-placeholder.png" alt="Map Location" />
-          </div>
-        </div>
-      </section>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vista General</title>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-section">
+      <!-- Barra de búsqueda -->
+      <input type="text" class="search-bar" placeholder="Buscar...">
     </div>
-  </div>
-  
+    <div class="profile-section">
+      <img src="profile-pic.jpg" alt="Foto de perfil" class="profile-pic">
+      <div class="user-info">
+        <h2>Lady</h2>
+        <p>Administrador</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Contenido -->
+  <main>
+    <h1 class="main-title">Vista General</h1>
+
+    <!-- Sección de tareas y proyectos -->
+    <section class="tasks-projects-section">
+      <!-- Tareas -->
+      <div class="tasks-section">
+        <div class="icon"> <!-- Aquí colocas tu ícono de tareas -->
+          <img src="task-icon.png" alt="Icono de tareas">
+        </div>
+        <h3>Tareas en las que está vinculado</h3>
+        <p class="task-count">50</p>
+        <p class="task-percentage">+2% más tareas a las que está vinculado</p>
+      </div>
+
+      <!-- Proyectos -->
+      <div class="projects-section">
+        <div class="icon"> <!-- Aquí colocas tu ícono de proyectos -->
+          <img src="project-icon.png" alt="Icono de proyectos">
+        </div>
+        <h3>Proyectos en los que está vinculado</h3>
+        <p class="project-count">13 / 100</p>
+        <p class="project-percentage">-1% menos que el mes pasado</p>
+      </div>
+    </section>
+
+    <!-- Sección de columnas -->
+    <section class="columns-section">
+      <!-- Columna izquierda -->
+      <div class="column left-column">
+        <div class="profile-pic-container">
+          <img src="albert-camus.jpg" alt="Albert Camus" class="profile-pic-circle">
+        </div>
+        <h2>Albert Camus</h2>
+      </div>
+
+      <!-- Columna central -->
+      <div class="column center-column">
+        <p><strong>Dirección:</strong> 12 Rue de la Liberté, 75001 Paris, Francia</p>
+        <p><strong>Teléfono:</strong> +33 1 45 67 89 01</p>
+        <p><strong>Correo electrónico:</strong> albert.camus&#64;example.com</p>
+        <p><strong>Sitio web:</strong> www.albertcamus-portfolio.com</p>
+        <p><strong>Ubicación:</strong> París, Francia</p>
+        <p><strong>Empresa:</strong> Editorial Phénix</p>
+        <p><strong>Cargo:</strong> Editor en Jefe</p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/albertcamus" target="_blank">linkedin.com/in/albertcamus</a></p>
+      </div>
+
+      <!-- Columna derecha -->
+      <div class="column right-column">
+        <!-- Contacto -->
+        <div class="contact-section">
+          <h3>Contacto</h3>
+          <div class="contact-icons">
+            <img src="phone-icon.png" alt="Teléfono">
+            <img src="email-icon.png" alt="Correo">
+            <img src="chat-icon.png" alt="Chat">
+          </div>
+        </div>
+
+        <!-- Ubicación -->
+        <div class="location-section">
+          <h3>Ubicación
+            <select>
+              <option>Actual</option>
+              <option>Últimos 3 meses</option>
+              <option>Últimos 6 meses</option>
+            </select>
+          </h3>
+          <div class="map-placeholder">
+            <!-- Aquí va el mapa -->
+            <img src="map-placeholder.png" alt="Mapa de ubicación">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

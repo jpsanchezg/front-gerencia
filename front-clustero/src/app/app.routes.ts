@@ -3,4 +3,5 @@ import { ComunicacionActoresComponent } from './comunicacion-actores/comunicacio
 
 export const routes: Routes = [
     {path: '', redirectTo: '/comunicacion', pathMatch: 'full'},
+    {path: 'comunicacion', component: ComunicacionActoresComponent},
 ];
