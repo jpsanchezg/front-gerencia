@@ -1,60 +1,60 @@
+html {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
 * {
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
-    font-weight: normal;
-    font-style: normal;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Cambié de 'Open Sans' a 'Roboto' */
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url('../../assets/mancha.png');
+    /* Reducimos el tamaño de la imagen */
+    background-size: 70% auto; 
+    /* Desplazamos la imagen hacia la derecha */
+    background-position: 105% 90%;
+    width: 100%;
+    height: 1200px;
+    background-repeat: no-repeat;
 }
 
 .menu {
-    margin: 0;
-    padding: 0;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-}
-
-.menu-izq {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: .5rem .5rem .5rem 5rem;
+    margin: 2rem 8rem;
+    background-color: transparent;
+    font-size: 22px;
 }
 
 .menu-izq a {
     color: black;
-    margin: .5rem .8rem;
+    margin: 0 .8rem;
     transition: .2s;
 }
 
 .menu-izq a:hover {
     color: #FF4500;
-    transition: .2s;
-}
-
-.menu-centro {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: .8rem;
 }
 
 .menu-centro h1 {
     color: #FF4500;
-    font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-style: normal;
     margin: 0;
-}
-
-.menu-der {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 0rem 5rem .5rem 0rem;
+    font-size: 35px;
 }
 
 .menu-der a {
@@ -67,10 +67,82 @@ body {
 
 .menu-der a:hover {
     background-color: #FF4500;
-    transition: .2s;
 }
 
 a {
     text-decoration: none;
-    margin: .5rem .5rem .5rem .5rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.hero-texto {
+    width: 40%;
+    margin-right: 5rem;
+}
+
+.hero-texto h2 {
+    font-size: 45px;
+    color: #3A6F94;
+    margin-bottom: 1rem;
+}
+
+.hero-texto p {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 2rem;
+}
+
+.botones {
+    padding: 2rem 0rem;
+}
+
+.botones a {
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.btn-primario {
+    background-color: #3A6F94;
+    color: white;
+    transition: .2s;
+}
+
+.btn-primario:hover {
+    background-color: #FF4500;
+    transition: .2s;
+}
+
+.btn-secundario {
+    background-color: white;
+    color: #3A6F94;
+    border: 2px solid #3A6F94;
+    transition: .2s;
+}
+
+.btn-secundario:hover {
+    background-color: #3A6F94;
+    color: white;
+    transition: .2s;
+}
+
+.hero-imagen {
+    height: 550px;
+    width: 800px;
+    background-image: url('../../assets/isla.png');
+    /* Reducimos el tamaño de la imagen */
+    background-size: 100% auto; 
+    width: 40%;
+    height: 700px;
+    background-repeat: no-repeat;
 }
