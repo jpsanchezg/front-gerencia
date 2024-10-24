@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Cambié de 'Open Sans' a 'Roboto' */
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-izq {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: .5rem .5rem .5rem 5rem;
+}
+
+.menu-izq a {
+    color: black;
+    margin: .5rem .8rem;
+    transition: .2s;
+}
+
+.menu-izq a:hover {
+    color: #FF4500;
+    transition: .2s;
+}
+
+.menu-centro {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: .8rem;
+}
+
+.menu-centro h1 {
+    color: #FF4500;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    margin: 0;
+}
+
+.menu-der {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: 0rem 5rem .5rem 0rem;
+}
+
+.menu-der a {
+    background-color: #3A6F94;
+    color: white;
+    border-radius: .5rem;
+    padding: .5rem 3rem;
+    transition: .2s;
+}
+
+.menu-der a:hover {
+    background-color: #FF4500;
+    transition: .2s;
+}
+
+a {
+    text-decoration: none;
+    margin: .5rem .5rem .5rem .5rem;
+}
